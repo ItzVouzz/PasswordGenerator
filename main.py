@@ -9,20 +9,18 @@ password = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q',
 
 passwordLength = input("[-] How much length of password do you want? ")
 try:
-    int(passwordLength)
+    passwordLength = int(passwordLength)
 except:
     print("\n[!] Password length must be number\n")
     exit()
 
 totalPassword = input("[-] How many random passwords do you want? ")
 try:
-    int(totalPassword)
+    totalPassword = int(totalPassword)
 except:
     print("\n[!] Total random password must be number\n")
     exit()
 
-passwordLength = int(passwordLength)
-totalPassword = int(totalPassword)
 print("")
 i = 0
 while(i < totalPassword):
